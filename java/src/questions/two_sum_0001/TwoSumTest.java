@@ -4,7 +4,7 @@ import java.util.List;
 
 import framework.annotations.Test;
 
-public class TwoSumTests {
+public class TwoSumTest {
 
     private record Triple(int target, int[] input, int[] expected) {
         public static Triple of(int target, int[] input, int[] expected) {

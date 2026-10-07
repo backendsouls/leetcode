@@ -2,16 +2,18 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 import framework.annotations.Test;
+import questions.palindrome_number_0009.PalindromeNumberTest;
 // import framework.samples.CalculatorTest;
 // import framework.samples.CalculatorTest2;
-import questions.two_sum_0001.TwoSumTests;
+import questions.two_sum_0001.TwoSumTest;
 
 public class TestRunner {
     public static void main(String[] args) throws Exception {
         Class<?>[] testSuites = {
             // CalculatorTest.class,
             // CalculatorTest2.class,
-            TwoSumTests.class
+            TwoSumTest.class,
+            PalindromeNumberTest.class,
         };
 
         List<String> targetClasses = List.of(args);
