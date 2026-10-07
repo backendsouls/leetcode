@@ -4,6 +4,7 @@ import java.util.List;
 import framework.annotations.Test;
 import questions.binary_search_0704.BinarySearchTest;
 import questions.palindrome_number_0009.PalindromeNumberTest;
+import questions.search_insert_position_0035.SearchInsertPositionTest;
 // import framework.samples.CalculatorTest;
 // import framework.samples.CalculatorTest2;
 import questions.two_sum_0001.TwoSumTest;
@@ -15,7 +16,8 @@ public class TestRunner {
             // CalculatorTest2.class,
             TwoSumTest.class,
             PalindromeNumberTest.class,
-            BinarySearchTest.class
+            BinarySearchTest.class,
+            SearchInsertPositionTest.class
         };
 
         List<String> targetClasses = List.of(args);
