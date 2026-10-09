@@ -2,11 +2,11 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 import framework.annotations.Test;
-import questions.binary_search_0704.BinarySearchTest;
-import questions.length_of_last_word_0058.LengthOfLastWordTest;
-import questions.palindrome_number_0009.PalindromeNumberTest;
-import questions.search_insert_position_0035.SearchInsertPositionTest;
-import questions.two_sum_0001.TwoSumTest;
+import problems.problem_0001_two_sum.TwoSumTest;
+import problems.problem_0009_palindrome_number.PalindromeNumberTest;
+import problems.problem_0035_search_insert_position.SearchInsertPositionTest;
+import problems.problem_0058_length_of_last_word.LengthOfLastWordTest;
+import problems.problem_0704_binary_search.BinarySearchTest;
 
 public class TestRunner {
     public static void main(String[] args) throws Exception {

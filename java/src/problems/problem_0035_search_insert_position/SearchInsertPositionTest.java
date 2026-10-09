@@ -1,10 +1,10 @@
-package questions.binary_search_0704;
+package problems.problem_0035_search_insert_position;
 
 import java.util.List;
 
 import framework.annotations.Test;
 
-public class BinarySearchTest {
+public class SearchInsertPositionTest {
 
     private record Triple(int[] input, int target, int expected) {
         public static Triple of(int[] input, int target, int expected) {
@@ -14,12 +14,15 @@ public class BinarySearchTest {
 
     private static List<Triple> testCases = List.of(
         Triple.of(new int[] { -1, 0, 3, 5, 9, 12 }, 9, 4),
-        Triple.of(new int[] { -1, 0, 3, 5, 9, 12 }, 2, -1),
-        Triple.of(new int[] { -1, 0, 3, 5, 9, 12 }, 13, -1)
+        Triple.of(new int[] { -1, 0, 3, 5, 9, 12 }, 2, 2),
+        Triple.of(new int[] { -1, 0, 3, 5, 9, 12 }, 13, 6),
+        Triple.of(new int[] { 1, 3, 5, 6 }, 5, 2),
+        Triple.of(new int[] { 1, 3, 5, 6 }, 2, 1),
+        Triple.of(new int[] { 1, 3, 5, 6 }, 7, 4)
     );
 
     @Test
-    public void testBinarySearch() {
+    public void testSearchInsert() {
         for (Triple testCase : testCases) {
 
             // GIVEN
@@ -28,7 +31,7 @@ public class BinarySearchTest {
             var expected = testCase.expected();
 
             // WHEN
-            int actual = new BinarySearchSolution().search(input, target);
+            var actual = new SearchInsertPositionSolution().searchInsert(input, target);
 
             // THEN
             assert actual == expected;

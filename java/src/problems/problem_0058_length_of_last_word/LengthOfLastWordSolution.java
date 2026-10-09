@@ -1,4 +1,4 @@
-package questions.length_of_last_word_0058;
+package problems.problem_0058_length_of_last_word;
 
 public class LengthOfLastWordSolution {
 

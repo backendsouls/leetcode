@@ -1,4 +1,4 @@
-package questions.palindrome_number_0009;
+package problems.problem_0009_palindrome_number;
 
 import java.util.Map;
 

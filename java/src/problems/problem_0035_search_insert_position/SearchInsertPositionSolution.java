@@ -1,4 +1,4 @@
-package questions.search_insert_position_0035;
+package problems.problem_0035_search_insert_position;
 
 public class SearchInsertPositionSolution {
     public int searchInsert(int[] nums, int target) {
