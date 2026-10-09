@@ -16,10 +16,16 @@ public class PalindromeNumberTest {
 
     @Test
     public void testIsPalindrome() {
-        for (Map.Entry<Integer, Boolean> entry : testCases.entrySet()) {
-            int input = entry.getKey();
-            boolean expected = entry.getValue();
-            boolean actual = new PalindromeNumberSolution().isPalindrome(input);
+        for (var testCase : testCases.entrySet()) {
+
+            // GIVEN
+            var input = testCase.getKey();
+            var expected = testCase.getValue();
+
+            // WHEN
+            var actual = new PalindromeNumberSolution().isPalindrome(input);
+
+            // THEN
             assert actual == expected;
         }
     }

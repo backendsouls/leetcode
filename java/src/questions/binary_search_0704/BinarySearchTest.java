@@ -21,8 +21,17 @@ public class BinarySearchTest {
     @Test
     public void testBinarySearch() {
         for (Triple testCase : testCases) {
-            int result = new BinarySearchSolution().search(testCase.input, testCase.target);
-            assert result == testCase.expected;
+
+            // GIVEN
+            var input = testCase.input();
+            var target = testCase.target();
+            var expected = testCase.expected();
+
+            // WHEN
+            int actual = new BinarySearchSolution().search(input, target);
+
+            // THEN
+            assert actual == expected;
         }
     }
 }

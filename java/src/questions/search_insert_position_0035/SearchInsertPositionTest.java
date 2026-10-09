@@ -24,8 +24,17 @@ public class SearchInsertPositionTest {
     @Test
     public void testSearchInsert() {
         for (Triple testCase : testCases) {
-            int result = new SearchInsertPositionSolution().searchInsert(testCase.input, testCase.target);
-            assert result == testCase.expected;
+
+            // GIVEN
+            var input = testCase.input();
+            var target = testCase.target();
+            var expected = testCase.expected();
+
+            // WHEN
+            var actual = new SearchInsertPositionSolution().searchInsert(input, target);
+
+            // THEN
+            assert actual == expected;
         }
     }
 }

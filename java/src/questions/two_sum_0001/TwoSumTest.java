@@ -22,10 +22,18 @@ public class TwoSumTest {
     @Test
     public void testTwoSum() {
         for (var testCase: testCases) {
-            var expected = testCase.expected();
-            var result = new TwoSumSolution().twoSum(testCase.input(), testCase.target());
 
-            assert expected[0] == result[0] && expected[1] == result[1];
+            // GIVEN
+            var input = testCase.input();
+            var target = testCase.target();
+            var expected = testCase.expected();
+
+            // WHEN
+            var actual = new TwoSumSolution().twoSum(input, target);
+
+            // THEN
+            assert actual[0] == expected[0];
+            assert actual[1] == expected[1];
         }
     }
 }
